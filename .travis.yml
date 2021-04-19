@@ -52,6 +52,7 @@ jobs:
     - env: EMBER_TRY_SCENARIO=ember-canary
     - env: EMBER_TRY_SCENARIO=ember-default-with-jquery
     - env: EMBER_TRY_SCENARIO=ember-classic
+<<<<<<< HEAD
     - env: EMBER_TRY_SCENARIO=aframe-0.5
     - env: EMBER_TRY_SCENARIO=aframe-0.6
     - env: EMBER_TRY_SCENARIO=aframe-0.7
@@ -95,6 +96,10 @@ jobs:
         on:
           tags: true
           repo: ember-vr/ember-aframe-shim
+=======
+    - env: EMBER_TRY_SCENARIO=embroider-safe
+    - env: EMBER_TRY_SCENARIO=embroider-optimized
+>>>>>>> 658bd4a... v3.25.3...v3.26.1
 
 script:
   - node_modules/.bin/ember try:one $EMBER_TRY_SCENARIO
