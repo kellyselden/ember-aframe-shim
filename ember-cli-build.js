@@ -14,6 +14,7 @@ module.exports = function (defaults) {
     behave. You most likely want to be modifying `./index.js` or app's build file
   */
 
+<<<<<<< HEAD
   app.import(
     'node_modules/aframe-event-set-component/dist/aframe-event-set-component.js'
   );
@@ -25,4 +26,8 @@ module.exports = function (defaults) {
   );
 
   return app.toTree();
+=======
+  const { maybeEmbroider } = require('@embroider/test-setup');
+  return maybeEmbroider(app);
+>>>>>>> 658bd4a... v3.25.3...v3.26.1
 };
